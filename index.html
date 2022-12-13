@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+<title>John Doe | <span data-trans-softdev>Software Developer</span></title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1><span data-trans-johndoe>John Doe</span></h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <div class="lang" id="lang">
+              <span class="lang-text" data-trans-lang>Language:</span>
+              <select class="lang-switch" id="lang-switch">
+                  <option value="en" selected>English</option>
+                  <option value="de">Deutsch</option>
+              </select>
+            </div>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="assets/images/clip-programming.png"
+        alt="programmer_placeholder"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+          inventore tempore minus nemo, iste ullam illo laboriosam maiores
+          repudiandae quos!
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
+        autem deleniti cupiditate molestias quis unde quae totam porro dicta
+        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+        nostrum dolor minus, libero delectus praesentium perferendis
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+        consequuntur labore? Ea totam voluptas amet!
+      </p>
+    </section>
+    
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header"><span data-trans-skills>My Top Skills</span></h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated ">
+          <img
+            src="assets/icons/c-sharp-c.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/VB.NET_Logo.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/Azure-DevOps.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated ">
+          <img
+            src="assets/icons/oracle_db.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/docker-svgrepo-com.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2><span data-trans-contact>Get In Touch With Me</span></h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyyvaqwo" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                pattern=".+@.+[.].+"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message"><span data-trans-msg>Message</span></label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/xing-icon.svg"
+          alt="Xing"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/LinkedIn_icon.svg"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/Octicons-mark-github.svg"
+          alt="Github"
+          loading="lazy"
+          class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/arrow-alt-circle-up.svg"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; Copyright 2022</p>
+      <p class="copy">
+        Built with &#x2661; by
+        <a href="#" target="_blank"
+          >John Doe</a
+        >
+      </p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/jquery-3.6.1.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/translate.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    
+</body>
+</html>
