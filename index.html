@@ -31,14 +31,14 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
+    <nav id="navbar">
         <h1>Vladimir Ovchinnikov</h1>
         <ul class="navigation">
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
             <div class="lang" id="lang">
-              <span class="lang-text" data-trans-lang>Language:</span>
+              <span data-trans-lang class="lang-text">Language:</span>
               <select class="lang-switch" id="lang-switch">
                   <option value="en" selected>English</option>
                   <option value="de">Deutsch</option>
@@ -69,20 +69,25 @@
     <!-- More about -->
     <section class="more-about">
       <h2><span data-trans-description>More About Me</span></h2>
-      <span data-trans-descriptiontext>
       <p>
+        <span data-trans-descriptiontext1>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
         nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
         autem deleniti cupiditate molestias quis unde quae totam porro dicta
         iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
+        </span>
       </p>
       <p>
+        <span data-trans-descriptiontext2>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
         nostrum dolor minus, libero delectus praesentium perferendis
+        </span>
       </p>
       <p>
+        <span data-trans-descriptiontext3>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
         consequuntur labore? Ea totam voluptas amet!
+        </span>
       </p>
       </span>
     </section>
@@ -192,21 +197,21 @@
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="#" target="_blank"
+      <a href="https://www.xing.com/profile/Vladimir_Ovchinnikov3/cv" target="_blank"
         ><img
           src="assets/icons/xing-icon.svg"
           alt="Xing"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://www.linkedin.com/in/vladimir-ovchinnikov-86a92b14b/" target="_blank"
         ><img
           src="assets/icons/LinkedIn_icon.svg"
           alt="Linkedin"
           loading="lazy"
           class="socicon"
       /></a>
-      <a href="#" target="_blank"
+      <a href="https://github.com/wowanator" target="_blank"
         ><img
           src="assets/icons/Octicons-mark-github.svg"
           alt="Github"
@@ -228,9 +233,7 @@
       <p class="copy">&copy; Copyright 2022</p>
       <p class="copy">
         Built with &#x2661; by
-        <a href="#" target="_blank"
-          >John Doe</a
-        >
+        <a href="#navbar">Vladimir Ovchinnikov</a>
       </p>
     </footer>
 
