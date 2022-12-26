@@ -19,7 +19,7 @@ $.fn.translate = function(opt){
 		}
 	else if (el[0].nodeName.toLowerCase() == 'a')
 	{
-		$(el).href(function(){
+		$(el).attr("href", (function(){
 			var nod = this.attributes[0].nodeName;
 			if (nod.indexOf("data-trans-") === 0){
 				var key = nod.split("-");
@@ -27,7 +27,7 @@ $.fn.translate = function(opt){
 				return t[key[2]];
 				}
 			}
-		})
+		}))
 	}
 	}
 	if($(sett.langs)[0].nodeName.toLowerCase() == 'select') {
