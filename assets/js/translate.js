@@ -6,15 +6,29 @@ $.fn.translate = function(opt){
 		set_lang(sett.source[lang]);
 	}
 	function set_lang(t){
-	$(el).text(function(){
-		var nod = this.attributes[0].nodeName;
-		if (nod.indexOf("data-trans-") === 0){
-			var key = nod.split("-");
-			if(t.hasOwnProperty(key[2])){
-			return t[key[2]];
+	if(el[0].nodeName.toLowerCase() == 'span') {
+		$(el).text(function(){
+			var nod = this.attributes[0].nodeName;
+			if (nod.indexOf("data-trans-") === 0){
+				var key = nod.split("-");
+				if(t.hasOwnProperty(key[2])){
+				return t[key[2]];
+				}
 			}
+		});
 		}
-	});
+	else if (el[0].nodeName.toLowerCase() == 'a')
+	{
+		$(el).href(function(){
+			var nod = this.attributes[0].nodeName;
+			if (nod.indexOf("data-trans-") === 0){
+				var key = nod.split("-");
+				if(t.hasOwnProperty(key[2])){
+				return t[key[2]];
+				}
+			}
+		})
+	}
 	}
 	if($(sett.langs)[0].nodeName.toLowerCase() == 'select') {
 	$(sett.langs).on("change", function(){
